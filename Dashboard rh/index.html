@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash HR</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/imgs/icon.png" type="icon_path" width="20px" height="20px">
+    <script type="text/javascript">
+        function close() {
+            document.getElementById('modal1').style.display = 'none';
+            document.body.style.overflow = "initial";
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navigation header-->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="logo-google"></ion-icon>
+                        </span>
+                        <span class="title">Isetch Google Club</span>
+                    </a>
+                </li>
+
+                <li class="hovered">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Members</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="title">Messages</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="help-outline"></ion-icon>
+                        </span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+
+                <li id="sign" data-modal-target="modal1">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <!---- Main--->
+        <div class="main"><a id="mainn"></a>
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <div><img src="assets/imgs/output-onlinegiftools.gif" alt="" height="130px" width="140px"></div>
+                <div class="ti">
+                    <h2 class="hover-underline-animation">Welcome Back HR</h2>
+                </div>
+            </div>
+            <div class="modal" id="modal1"> <!-- This is the background overlay -->
+                <div class="modal-content"> <!-- This is the actual modal/popup box -->
+                    <form action="../../button.html">
+
+                        <h2 style="text-align: center;opacity: 0.5;color:var(--blue);">Sign Out ?</h2>
+                        <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+                        <lord-icon src="https://cdn.lordicon.com/moscwhoj.json" trigger="loop-on-hover"
+                            style="width:90px;height:90px;position: relative;left: 43%;color:lightblue">
+                        </lord-icon>
+                        <br><br>
+                        <p style="text-align: center;">Are you sure that you want to disconnect ?</p>
+
+                        <div style="text-align: center;">
+
+
+                            <img src="assets/imgs/x-mark.png" alt="" width="20px" height="20px" class="x"
+                                onclick="document.getElementById('modal1').style.display='none'" />
+                            <input type="submit" value="Yes" class="yesno" />
+                            <input type="reset" name="" id="" value="No" class="yesno"
+                                onClick="document.getElementById('modal1').style.display='none'"
+                                onclick="document.body.style.overflow=initial">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!--  Cards  -->
+            <div class=" cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">100</div>
+                        <div class="cardName">Daily Views</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">55</div>
+                        <div class="cardName">Total number of members</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">5</div>
+                        <div class="cardName">Total Tasks</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <img src="assets/imgs/istockphoto-1256489977-170667a-removebg-preview.png" alt="" id="tasks">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">150DT</div>
+                        <div class="cardName">Contributions</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================ Order Details List ================= -->
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2 class="hover-underline-animation">Recent Tasks</h2>
+                        <h1 style="text-align: center;position: relative;left: -4%;">Departement Media</h1>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Task</td>
+
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Magazine</td>
+
+                                <td><span class="nstaOK">Not finished yet<ion-icon name="close-circle-outline"
+                                            style="position: relative;top: 2px;left: 2px;"></ion-icon></span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Post Flutter vs React native</td>
+
+                                <td><span>Done <ion-icon name="chevron-down-circle-outline"
+                                            style="position: relative;top: 2px;left: 2px;"></ion-icon></span>
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                    <h2></h2>
+                    <h1 style="color:#287bff;font-size:medium;text-align: center;position: relative;top: 10%;">
+                        Departement Dev</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Task</td>
+
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Web Google Club</td>
+
+                                <td><span class="nstaOK">Not finished yet<ion-icon name="close-circle-outline"
+                                            style="position: relative;top: 2px;left: 2px;"></ion-icon></span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Web library(Isetch)</td>
+
+                                <td><span>Done <ion-icon name="chevron-down-circle-outline"
+                                            style="position: relative;top: 2px;left: 2px;"></ion-icon></span>
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ================= New Customers ================ -->
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Hardworking members </h2>
+                    </div>
+
+                    <table>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/anis.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Anis <br> <span>Departement(media/dev)</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/anis.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Anis <br> <span>Departement(media/dev)</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/anis.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Anis <br> <span>Departement(media/dev)</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/anis.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Anis <br> <span>Departement(media/dev)</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/anis.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Anis <br> <span>Departement(media/dev)</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/anis.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Anis <br> <span>Departement(media/dev)</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/anis.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Anis <br> <span>Departement(media/dev)</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/anis.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Anis <br> <span>Departement(media/dev)</span></h4>
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
